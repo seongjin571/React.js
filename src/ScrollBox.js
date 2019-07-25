@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 class ScrollBox extends Component {
     ScrollToBottom = () => {
         const{scrollHeight, clientHeight} = this.box;
-        console.log(this.box);
-        console.log(scrollHeight);
-        console.log(clientHeight);
         this.box.scrollTop = scrollHeight - clientHeight;
     }
     render() {
